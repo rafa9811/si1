@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+    <title>{{ title }}</title>
+
+{% endblock %}
+
+
+{% block login %}
+
+  {% if session_usuario %}
+    <p> Hola {{ session_usuario }}</p>
+    <a class="button1" href="{{ url_for('logout') }}">Logout</a>
+  {% else %}
+	  <a class="button1" href="{{ url_for('login') }}">Login</a>
+	  <a class="button1" href="{{ url_for('registro') }}">Registrarse</a>
+  {% endif %}
+
+{% endblock %}
+
+
+{% block content %}
+
+   {% if session_usuario %}
+      <h2>Historial</h2>
+      <table id ="tabla" style="width:70%">
+         <tr>
+           <th>Película</th>
+         </tr>
+         {% if peliculas %}
+         {% for p in peliculas %}
+            <tr class="nodesplegable">
+              <td>{{ p.titulo }}</td>
+            </tr>
+            <tr class="desplegable" style="display:none" >
+              <td colspan="3">
+                <table style="width:60%">
+                  <tr>
+                    <th></th>
+                    <th>Precio</th>
+                    <th>Fecha</th>
+                  </tr>
+                  <tr>
+                    <td><img src={{ url_for('static', filename=p.poster ) }} alt="poster" class="adastra"></td>
+                    <td>{{ p.precio }}</td>
+                    <td>{{ p.fechacompra }}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+         {% endfor %}
+         {% endif %}
+       </table>
+       <br><br>
+
+       <form action="" method="post" name="fhidden2" id="f2">
+            <p>Su saldo actual: {{saldo}}</p>
+            <p><b>Añadir saldo: </b></p>
+            <input type="number" name="money" value="1"> <br>
+            <input type="submit" value="Añadir">
+       </form> <br>
+       <p>{{ alert }}</p>
+
+    {% else %}
+      <h4>Debe iniciar sesión para ver su historial</h4>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block script %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+      $tabla = $('#tabla').find('.nodesplegable');
+
+      $tabla.click(
+
+        function() {
+          $(this).next('.desplegable').show();
+          $(this).next('.desplegable').click(
+              function() {
+                $(this).hide();
+              }
+          );
+        }
+      );
+
+  });
+  </script>
+{% endblock %}

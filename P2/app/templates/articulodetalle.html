@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>{{ title }}</title>
+{% endblock%}
+
+{% block content %}
+
+     <h2>Detalles de película</h2>
+     <div id="pelicula1">
+        <img src={{ url_for('static', filename=movie.poster ) }} alt="poster" class="adastra">
+        <div id="pel1">
+           <p><b>Nombre:</b> {{ movie.titulo }}</p>
+           <p><b>Estreno:</b> {{ movie.estreno }}</p>
+           <p><b>Actores principales:</b> {{ movie.actores }}</p>
+           <p><b>Director:</b> {{ movie.director }}</p>
+           <p><b>Sinopsis:</b> {{ movie.sinopsis }}</p><br>
+
+           <form action="" method="post" name="fhidden" id="f1">
+                <p><b>Añadir unidades al carrito</b></p>
+                <input type="number" name="quantity" value="1" min="1"> <br>
+                <input type="image" src="{{ url_for('static', filename='carrito.svg' ) }}" class= "m1">
+           </form>
+         </div>
+      </div>
+
+{% endblock %}
+
+
+</html>

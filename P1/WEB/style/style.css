@@ -1,0 +1,174 @@
+html {
+  height:100vh;
+  width:100vw;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: 0;
+    font-family: helvetica;
+}
+
+footer {
+
+    background:-webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(246,41,12,1) 57%, rgba(241,111,92,1) 99%, rgba(231,56,39,1) 100%);
+    color: white;
+
+}
+
+header {
+
+  width:100%;
+
+}
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    background:-webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(246,41,12,1) 57%, rgba(241,111,92,1) 99%, rgba(231,56,39,1) 100%);
+}
+
+form {
+  margin-top: 40px;
+}
+
+#form1 {
+  margin-left: 20%;
+
+}
+
+.navigation {
+    display: grid;
+}
+.navigation p {
+  color:white;
+}
+
+.container {
+    padding: 50px;
+}
+
+#logo {
+    width: 100px;
+}
+
+#texto {
+    width: 500px;
+}
+.adastra {
+    width: 200px;
+    height: 280px;
+    margin: 10px;
+}
+
+#mientrasdurelaguerra {
+    width: 200px;
+    height:280px;
+	padding-right:20px;
+	padding-left: 20px;
+}
+
+#it2 {
+    width: 200px;
+    height:280px;
+	padding-left: 20px;
+}
+
+.m1 {
+    width:50px;
+    height:50px;
+}
+
+#adastraarticulo {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.menu-lateral {
+  width: 7%;
+  padding: 40px;
+  background: #dfdede;
+
+
+}
+
+.menu-lateral a {
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+}
+
+.menu-lateral p {
+  color: black;
+  text-decoration: none;
+ }
+
+.cuerpo {
+  display:flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #FFFFFF;
+  height:71.5%;
+
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow:scroll;
+}
+
+.ultimaspeliculas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #FFFFFF;
+}
+
+.registro {
+  margin: 5%;
+}
+
+.resultados {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items: baseline;
+  padding: 30px;
+}
+.button1 {
+  background-color: #FFFFFF;
+  border: none;
+  color: black;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#pelicula1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FFFFFF;
+  width: 80%;
+}
+
+#pel1 {
+  padding: 20px;
+}
+
+.peliculahistorial {
+  width:120px;
+  height: 160px;
+  margin:10px;
+}

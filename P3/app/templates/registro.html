@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+  <title>{{ title }}</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+{% endblock%}
+
+
+{% block content %}
+
+  <p><strong>{{ alerta }}</strong></p>
+  <div id="registro">
+    <h1>Registro de usuario</h1>
+
+    <form name="fregistro" action="{{url_for('registro')}}" id="form1" method="POST" onsubmit="return validateForm()">
+        <ul>
+            <li>
+              <label for="username">Nombre de usuario:</label>
+              <span><input id="username" name="usuario" onblur="validateUsername()" required type="text" /></span>
+            </li>
+            <li>
+              <label for="pswd">Contraseña:</label>
+              <span><input id="pswd" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onblur="validatePassword()" name="pwd1" /></span>
+              <div id="pswd_info">
+                <h4>La contraseña debe tener:</h4>
+                <ul>
+                  <li id="letter" class="invalid">Al menos <strong>una letra</strong>
+                  </li>
+                  <li id="capital" class="invalid">Al menos <strong>una letra mayúscula</strong>
+                  </li>
+                  <li id="number" class="invalid">Al menos <strong>un número</strong>
+                  </li>
+                  <li id="length" class="invalid">Al menos <strong>8 caracteres</strong>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <label for="pswd2">Vuelva a introducir la contraseña:</label>
+              <span><input type="password" onblur="comparePasswords()" required name="pwd2" /></span>
+            </li>
+            <li>
+              <label for="correoelectronico">Correo electrónico:</label>
+              <span><input type="email" name="email" onblur="validateEmail()"></span>
+            </li>
+            <li>
+              <label for="genero">Seleccione género:</label>
+              <span><input type="radio" name="genero" value="Hombre" checked>Hombre</span>
+              <span><input type="radio" name="genero" value="Mujer">Mujer</span>
+            </li>
+            <li>
+              <label for="tarjetacredito">Tarjeta de crédito:</label>
+              <span><input type="text" name="tarjeta" required onblur="validateCreditCard()">Tarjeta credito</span>
+              <span>
+                  <select name="tipotarjeta">
+                      <option value="visa">Visa</option>
+                      <option value="mastercard">Mastercard</option>
+                      <option value="american">American Express</option>
+                  </select>
+                </span>
+            </li>
+
+            <li>
+              <input type="submit" value="Confirmar">
+            </li>
+        </ul>
+    </form>
+    
+  </div>
+
+{% endblock %}
+
+
+{% block script %}
+
+      <script type="text/javascript" src="{{ url_for('static', filename='js/validate.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/jqpass.js')}}"></script>
+
+{% endblock %}

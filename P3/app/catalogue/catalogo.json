@@ -1,0 +1,208 @@
+{
+	"peliculas": [
+		{
+			"id": 1,
+			"titulo": "Ad Astra",
+			"poster": "adastra.jpg",
+			"novedad": "Sí",
+			"director": "James Gray",
+			"precio": "25.99",
+			"categoria": "Ciencia ficcion",
+			"estreno": "20 de septiembre de 2019",
+			"sinopsis": "El astronauta Roy McBride (Brad Pitt) viaja a los límites exteriores del sistema solar para encontrar a su padre perdido y desentrañar un misterio que amenaza la supervivencia de nuestro planeta. Su viaje desvelará secretos que desafían la naturaleza de la existencia humana y nuestro lugar en el cosmos.",
+			"actores": [
+				"Brad Pitt",
+				"Tommy Lee Jones",
+				"Donald Sutherland",
+				"Ruth Negga",
+				"Liv Tyler",
+				"John Finn",
+				"Kayla Adams",
+				"Kimmy Shields",
+				"Bayardo De Murguia",
+				"Bobby Nish",
+				"Sasha Compère"
+			]
+		},
+
+		{
+			"id": 2,
+			"titulo": "Mientras dure la guerra",
+			"poster": "Mientrasdurelaguerra.jpg",
+			"novedad": "Sí",
+			"director": "Alejandro Amenabar",
+			"precio": "10.55",
+			"categoria": "Drama",
+			"estreno": "2019",
+			"sinopsis": "España. Verano de 1936. El célebre escritor Miguel de Unamuno decide apoyar públicamente la sublevación militar que promete traer orden a la convulsa situación del país. Inmediatamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca. Mientras, el general Franco consigue sumar sus tropas al frente sublevado e inicia una exitosa campaña con la secreta esperanza de hacerse con el mando único de la guerra. La deriva sangrienta del conflicto y el encarcelamiento de algunos de sus compañeros provoca que Unamuno empiece a cuestionar su postura inicial y a sopesar sus principios. Cuando Franco traslada su cuartel a Salamanca y es nombrado Jefe del Estado en la zona nacional, Unamuno acude a su Palacio, decidido a hacerle una petición.",
+			"actores": [
+				"Karra Elejalde",
+				"Eduard Fernández",
+				"Santi Prego",
+				"Patricia López",
+				"Inma Cuevas",
+				"Nathalie Poza",
+				"Luis Bermejo",
+				"Mireia Rey",
+				"Tito Valverde",
+				"Luis Callejo",
+				"Luis Zahera"
+			]
+		},
+
+		{
+			"id": 3,
+			"titulo": "It. Capitulo 2",
+			"poster": "it2.jpg",
+			"novedad": "Sí",
+			"director": "Andy Muschietti",
+			"precio": "21.65",
+			"categoria": "Terror",
+			"estreno": "2019",
+			"sinopsis": "Han pasado casi 30 años desde que el 'Club de los Perdedores', formado por Bill, Berverly, Richie, Ben, Eddie, Mike y Stanley, se enfrentaran al macabro y despiadado Pennywise (Bill Skarsgård). En cuanto tuvieron oportunidad, abandonaron el pueblo de Derry, en el estado de Maine, que tantos problemas les había ocasionado. Sin embargo, ahora, siendo adultos, parece que no pueden escapar de su pasado. Todos deberán enfrentarse de nuevo al temible payaso para descubrir si de verdad están preparados para superar sus traumas de la infancia.",
+			"actores": [
+				"Jessica Chastain",
+				"James McAvoy",
+				"Isaiah Mustafa",
+				"James Ransone",
+				"Bill Skarsgård",
+				"Jay Ryan",
+				"Bill Hader"
+			]
+		},
+
+		{
+			"id": 4,
+			"titulo": "El silencio de los corderos",
+			"poster": "elsilenciodeloscorderos.jpeg",
+			"novedad": "No",
+			"director": "Jonathan Demme",
+			"precio": "5.20",
+			"categoria": "Policiaca",
+			"estreno": "1991",
+			"sinopsis": "El FBI busca a 'Buffalo Bill', un asesino en serie que mata a sus víctimas, todas adolescentes, después de prepararlas minuciosamente y arrancarles la piel. Para poder atraparlo recurren a Clarice Starling, una brillante licenciada universitaria, experta en conductas psicópatas, que aspira a formar parte del FBI. Siguiendo las instrucciones de su jefe, Jack Crawford, Clarice visita la cárcel de alta seguridad donde el gobierno mantiene encerrado al Dr. Hannibal Lecter, antiguo psicoanalista y asesino, dotado de una inteligencia superior a la normal. Su misión será intentar sacarle información sobre los patrones de conducta del asesino que están buscando.",
+			"actores": [
+				"Jodie Foster",
+				"Anthony Hopkins",
+				"Scott Glenn",
+				"Ted Levine",
+				"Anthony Heald",
+				"Diane Baker"
+			]
+		},
+
+		{
+			"id": 5,
+			"titulo": "El efecto mariposa",
+			"poster": "efectomariposa.jpeg",
+			"novedad": "No",
+			"director": "Eric Bress",
+			"precio": "2.00",
+			"categoria": "Drama",
+			"estreno": "2004",
+			"sinopsis": "Evan Treborn, un joven que se está esforzando por superar unos dolorosos recuerdos de su infancia, descubre una técnica que le permite viajar atrás en el tiempo y ocupar su cuerpo de niño para poder cambiar el curso de su dolorosa historia. Sin embargo también descubre que cualquier mínimo cambio en el pasado altera enormemente su futuro.",
+			"actores": [
+				"Ashton Kutcher",
+				"Amy Smart",
+				"Kevin Schmidt",
+				"Chapelle Jaffe",
+				"Meilani Paul"
+			]
+		},
+
+		{
+			"id": 6,
+			"titulo": "Shutter Island",
+			"poster": "shutterisland.jpg",
+			"novedad": "No",
+			"director": "Martin Scorsese",
+			"precio": "3.00",
+			"categoria": "Thriller",
+			"estreno": "2010",
+			"sinopsis": "En el verano de 1954, los agentes judiciales Teddy Daniels (DiCaprio) y Chuck Aule (Ruffalo) son destinados a una remota isla del puerto de Boston para investigar la desaparición de una peligrosa asesina (Mortimer) que estaba recluida en el hospital psiquiátrico Ashecliffe, un centro penitenciario para criminales perturbados dirigido por el siniestro doctor John Cawley (Kingsley). Pronto descubrirán que el centro guarda muchos secretos y que la isla esconde algo más peligroso que los pacientes. Thriller psicológico basado en la novela homónima de Dennis Lehane.",
+			"actores": [
+				"Leonardo DiCaprio",
+				"Mark Ruffalo",
+				"Ben Kingsley"
+			]
+		},
+
+		{
+			"id": 7,
+			"titulo": "La habitacion de Fermat",
+			"poster": "lahabitaciondefermat.jpg",
+			"novedad": "No",
+			"director": "Luis Piedrahita",
+			"precio": "0.99",
+			"categoria": "Thriller",
+			"estreno": "2007",
+			"sinopsis": "Cuatro matemáticos, que no se conocen entre sí, son invitados por un misterioso anfitrión con el pretexto de resolver un gran enigma. Pronto descubren que se encuentran en una sala que empieza a menguar y que corren el riesgo de morir aplastados entre sus paredes. Tendrán entonces que averiguar qué relación hay entre ellos y por qué alguien quiere asesinarlos.",
+			"actores": [
+				"Alejo Sauras",
+				"Elena Ballesteros"
+			]
+		},
+
+		{
+			"id": 8,
+			"titulo": "Joker",
+			"poster": "joker.jpg",
+			"novedad": "Sí",
+			"director": "Todd Phillips",
+			"precio": "1.99",
+			"categoria": "Thriller",
+			"estreno": "2019",
+			"sinopsis": "Arthur Fleck (Phoenix) es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en el popular personaje de DC Comics Joker, conocido como archivillano de Batman, pero que en este film tomará un cariz más realista y oscuro.",
+			"actores": [
+				"Joaquin Phoenix",
+				"Robert De Niro",
+				"Frances Conroy",
+				"Zazie Beetz",
+				"Brett Cullen",
+				"Shea Whigham",
+				"Bryan Callen",
+				"Jolie Chan"
+			]
+		},
+
+		{
+			"id": 9,
+			"titulo": "Déjame salir",
+			"poster": "getout.jpg",
+			"novedad": "Sí",
+			"director": "Jordan Peele",
+			"precio": "31.99",
+			"categoria": "Terror",
+			"estreno": "2017",
+			"sinopsis": "Un joven afroamericano visita a la familia de su novia blanca, un matrimonio adinerado. Para Chris (Daniel Kaluuya) y su novia Rose (Allison Williams) ha llegado el momento de conocer a los futuros suegros, por lo que ella le invita a pasar un fin de semana en el campo con sus padres, Missy (Catherine Keener) y Dean (Bradley Whitford). Al principio, Chris piensa que el comportamiento demasiado complaciente de los padres se debe a su nerviosismo por la relación interracial de su hija, pero a medida que pasan las horas, una serie de descubrimientos cada vez más inquietantes le llevan a descubrir una verdad inimaginable.",
+			"actores": [
+				"Daniel Kaluuya",
+				"Allison Williams",
+				"Catherine Keener",
+				"Bradley Whitford",
+				"Betty Gabriel",
+				"Marcus Henderson"
+			]
+		},
+
+		{
+			"id": 10,
+			"titulo": "Midsommar",
+			"poster": "midsommar.jpg",
+			"novedad": "No",
+			"director": "Ari Aster",
+			"precio": "19.99",
+			"categoria": "Terror",
+			"estreno": "2019",
+			"sinopsis": "Una pareja estadounidense que no está pasando por su mejor momento acude con unos amigos al Midsommar, un festival de verano que se celebra cada 90 años en una aldea remota de Suecia. Lo que comienza como unas vacaciones de ensueño en un lugar en el que el sol no se pone nunca, poco a poco se convierte en una oscura pesadilla cuando los misteriosos aldeanos les invitan a participar en sus perturbadoras actividades festivas.",
+			"actores": [
+				"Florence Pugh",
+				"Jack Reynor",
+				"Will Poulter",
+				"Archie Madekwe",
+				"Lars Väringer",
+				"Katarina Weidhagen van Hal"
+			]
+		}
+	]
+}

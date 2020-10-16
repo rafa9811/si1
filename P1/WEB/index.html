@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pagina principal</title>
+        <meta charset="UTF-8">
+        <link href="style/style.css" rel="stylesheet">
+    </head>
+
+	<body>
+
+        <header>
+            <div class="container upper-container">
+                <a href="index.html"> <img src="images/logo.png" alt="logo" id="logo"></a>
+                <a href="index.html"> <img src="images/texto.png" alt="texto" id="texto"></a>
+                <nav class="navigation">
+                    <a class="button1" href="#">Login</a>
+                    <a class="button1" href="html/registro.html">Registrarse</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="cuerpo">
+            <div class="menu-lateral">
+                <a href="html/historial.html">Historial</a>
+                <a href="#"><img src="images/carrito.svg" alt="Carrito" class="m1"></a>
+            </div>
+
+            <div class="contenido">
+                <h3>Últimas películas</h3>
+                <div class ="ultimaspeliculas">
+                    <a href="html/articulodetalle.html"><img src="images/adastra.jpg" alt="poster" class="adastra"></a>
+					          <a href="html/articulodetalle.html"><img src="images/Mientrasdurelaguerra.jpg" alt="poster" class="adastra"></a>
+					          <a href="html/articulodetalle.html"><img src="images/it2.jpg" alt="poster" class="adastra"></a>
+                </div>
+                <form action="html/resultado.html">
+                    <fieldset>
+                      <legend>Buscar película</legend><br>
+                        Nombre:<br><input type="text" name="usuario"><br>
+                        <select name="categoria">
+                            <option value="thriller">Thriller</option>
+                            <option value="musical">Musical</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="acción">Acción</option>
+                        </select>
+                        <input type="submit" value="Confirmar">
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>© YOURDVD S.L. 2019-2019 TODOS LOS DERECHOS RESERVADOS.</p>
+        </footer>
+
+	</body>
+</html>

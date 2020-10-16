@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}
+
+  <title>{{ title }}</title>
+
+{% endblock%}
+
+{% block content %}
+          <p><strong>{{ alerta }}</strong></p>
+          <div class="login">
+            <h2>Login de usuario</h2>
+            <form name="flogin" action="{{url_for('login')}}" id="form1" method="POST">
+                Nombre de usuario:<br><input type="text" name="lusuario" onblur="lvalidateForm()" required><br>
+                Contraseña:<br><input type="password" name="lpwd" onblur="lvalidatePassword()" required><br>
+                <br><br>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+
+{% endblock %}
+
+
+{% block script %}
+
+      <script type="text/javascript">
+          function lvalidateForm() {
+            var x = document.forms["flogin"]["lusuario"].value;
+            if (x == "") {
+              alert("El campo usuario debe estar relleno.");
+              return false;
+            }
+          }
+      </script>
+
+      <script type="text/javascript">
+          function lvalidatePassword() {
+            var password = document.forms["flogin"]["lpwd"].value;
+			if (password == "") {
+              alert("El campo contraseña debe estar relleno.");
+              return false;
+            }
+          }
+      </script>
+
+{% endblock %}

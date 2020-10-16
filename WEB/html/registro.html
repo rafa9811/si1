@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <link href="../style/style.css" rel="stylesheet">
+    </head>
+
+	<body>
+
+        <header>
+            <div class="container upper-container">
+                <a href="../index.html"> <img src="../images/logo.png" alt= "logo" id="logo"></a>
+                <a href="../index.html"> <img src="../images/texto.png" alt= "texto" id="texto"></a>
+                <nav class="navigation">
+                    <a class="button1" href="#">Login</a>
+                    <a class="button1" href="registro.html">Registrarse</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="cuerpo">
+
+            <div class="menu-lateral">
+                <p>MENÚ</p>
+                <a href="#">Historial</a>
+                <a href="#"><img src="../images/carrito.svg" alt="Carrito" class="m1"></a>
+            </div>
+
+            <div class="registro">
+              <h2>Registro de usuario</h2>
+              <form action="../index.html" id="form1">
+                  Nombre de usuario:<br><input type="text" name="usuario"><br>
+                  Seleccione género:<br>
+                        <input type="radio" name="genero" value="Hombre" checked>Hombre<br>
+                        <input type="radio" name="genero" value="Mujer">Mujer<br>
+                  Contraseña:<br><input type="text" name="contrasenia"><br>
+                  Correo electrónico:<br><input type="text" name="email"><br>
+                  Tarjeta de crédito:<br><input type="text" name="tarjeta"><br>
+                  <select name="tipotarjeta">
+                      <option value="visa">Visa</option>
+                      <option value="mastercard">Mastercard</option>
+                      <option value="american">American Express</option>
+                  </select>
+                  <br><br>
+                  <input type="submit" value="Confirmar">
+              </form>
+          </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>© YOURDVD S.L. 2019-2019 TODOS LOS DERECHOS RESERVADOS.</p>
+        </footer>
+
+	</body>
+</html>

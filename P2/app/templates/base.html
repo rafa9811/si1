@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+         {%block title %} {% endblock %}
+        <meta charset="UTF-8">
+        <link href={{ url_for('static', filename="style.css") }} type="text/css" rel="stylesheet">
+
+
+    </head>
+
+	<body onload="mostrarnusuarios()">
+        <header>
+            <div class="container upper-container">
+                <a href="{{ url_for('index') }}"> <img src={{ url_for('static', filename="logo.png") }} alt="logo" id="logo"></a>
+                <a href="{{ url_for('index') }}"> <img src={{ url_for('static', filename="texto.png") }} alt="texto" id="texto"></a>
+                <nav class="navigation">
+                    {%block login%}
+                    <a class="button1" href="{{ url_for('login') }}">Login</a>
+                    <a class="button1" href="{{ url_for('registro') }}">Registrarse</a>
+                    {% endblock %}
+                </nav>
+            </div>
+        </header>
+
+        <div class="cuerpo">
+            <div class="menu-lateral">
+                <a href="{{ url_for('historial') }}">Historial</a>
+                <a href="{{ url_for('carrito') }}"><img src={{ url_for('static', filename="carrito.svg") }} alt="Carrito" class="m1"></a>
+                Número de usuarios: <p id="nusuarios" ></p>
+            </div>
+
+            <div class="contenido">
+				          {% block content %} {% endblock %}
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>© YOURDVD S.L. 2019-2019 TODOS LOS DERECHOS RESERVADOS.</p>
+        </footer>
+
+  {% block script %} {% endblock %}
+
+    <script type="text/javascript">
+      function mostrarnusuarios() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if(xhttp.readyState == 4 && xhttp.status == 200){
+            document.getElementById('nusuarios').innerText = xhttp.responseText;
+          }
+        }
+          var dir = "/nusuarios";
+          xhttp.open("GET", dir, true);
+          xhttp.send();
+
+      }
+    </script>
+    <script>
+    setInterval(mostrarnusuarios(), 3000);
+    </script>
+	</body>
+</html>

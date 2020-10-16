@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+    <title>{{ title }}</title>
+
+{% endblock %}
+
+
+{% block login %}
+
+  {% if session_usuario %}
+    <p> Hola {{ session_usuario }}</p>
+    <a class="button1" href="{{ url_for('logout') }}">Logout</a>
+  {% else %}
+	  <a class="button1" href="{{ url_for('login') }}">Login</a>
+	  <a class="button1" href="{{ url_for('registro') }}">Registrarse</a>
+  {% endif %}
+
+{% endblock %}
+
+
+{% block content %}
+
+    <h2>Artículos del carrito</h2>
+    <table style="width:50%">
+    	<tr>
+    		<th>Poster</th>
+    		<th>Título</th>
+    		<th>Precio</th>
+            <th></th>
+    	</tr>
+    	{% for p in peliculas %}
+    		<tr>
+    			<td><img src={{ url_for('static', filename=p.poster ) }} alt="poster" class="adastra"></td>
+    			<td>{{ p.titulo }}</td>
+    			<td>{{ p.precio }}</td>
+    		</tr>
+        {% endfor %}
+
+        <tr>
+            <td><b>Total</b></td>
+            <td></td>
+            <td>{{ total }}</td>
+        </tr>
+    </table>
+	<br><br>
+        {% if session_usuario %}
+            <form action="" method="POST" name="comprar">
+                <input type="submit" value="Comprar artículos">
+                <p>{{ alert }}</p>
+            </form>
+        {% else %}
+            <p><b>Debe iniciar sesión para comprar sus artículos.</b></p>
+            <a href="{{ url_for('login') }}"><b>Login</b></a>
+        {% endif %}
+
+{% endblock %}

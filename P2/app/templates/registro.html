@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% block title %}
+  <title>{{ title }}</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+{% endblock%}
+
+{% block content %}
+          <p><strong>{{ alerta }}</strong></p>
+          <div id="registro">
+            <h1>Registro de usuario</h1>
+            <form name="fregistro" action="../registro" id="form1" method="POST" onsubmit="return validateForm()">
+                <ul>
+                    <li>
+                      <label for="username">Nombre de usuario:</label>
+                      <span><input id="username" name="usuario" onblur="validateUsername()" required type="text" /></span>
+                    </li>
+                    <li>
+                      <label for="pswd">Contraseña:</label>
+                      <span><input id="pswd" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onblur="validatePassword()" name="pwd1" /></span>
+                      <div id="pswd_info">
+                              <h4>Password must meet the following requirements:</h4>
+                              <ul>
+                                <li id="letter" class="invalid">At least <strong>one letter</strong>
+                                </li>
+                                <li id="capital" class="invalid">At least <strong>one capital letter</strong>
+                                </li>
+                                <li id="number" class="invalid">At least <strong>one number</strong>
+                                </li>
+                                <li id="length" class="invalid">Be at least <strong>8 characters</strong>
+                                </li>
+                              </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <label for="pswd2">Vuelva a introducir la contraseña:</label>
+                      <span><input type="text" onblur="comparePasswords()" required name="pwd2" /></span>
+                    </li>
+                    <li>
+                      <label for="correoelectronico">Correo electrónico:</label>
+                      <span><input type="email" name="email" onblur="validateEmail()"></span>
+                    </li>
+                    <li>
+                      <label for="genero">Seleccione género:</label>
+                      <span><input type="radio" name="genero" value="Hombre" checked>Hombre</span>
+                      <span><input type="radio" name="genero" value="Mujer">Mujer</span>
+                    </li>
+                    <li>
+                      <label for="tarjetacredito">Tarjeta de crédito:</label>
+                      <span>
+                          <select name="tipotarjeta">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="american">American Express</option>
+                          </select>
+                        </span>
+                    </li>
+
+                    <li>
+                      <input type="submit" value="Confirmar">
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+
+{% endblock %}
+
+{% block script %}
+      <script type="text/javascript">
+
+          function validateUsername() {
+            var x = document.forms["fregistro"]["usuario"].value;
+            if (x == "") {
+              alert("El campo nombre debe estar relleno.");
+              return false;
+            }
+          }
+      </script>
+
+      <script type="text/javascript">
+          function validatePassword() {
+            var password = document.forms["fregistro"]["pwd1"].value;
+
+            var re= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+            if (!re.test(password)){
+              alert("La contraseña no cumple los estándares.");
+              return false;
+            }
+          }
+      </script>
+
+
+      <script type="text/javascript">
+          function comparePasswords() {
+            var password1 = document.forms["fregistro"]["pwd1"].value;
+            var password2 = document.forms["fregistro"]["pwd2"].value;
+
+            if (password1 != password2){
+              alert("Las contraseñas no coinciden.");
+              return false;
+            }
+          }
+      </script>
+
+      <script type="text/javascript">
+
+          function validateEmail() {
+            var re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+            var email = document.forms["fregistro"]["email"].value;
+            if (!(re.test(email))){
+              alert("La dirección de email es incorrecta.");
+              return false;
+            }
+          }
+      </script>
+
+      <script type="text/javascript">
+
+          function validateCreditCard() {
+            var card = document.forms["fregistro"]["tarjeta"].value;
+            if (!(/^(?=.*\d).{12,}$/.test(card))){
+              alert("La tarjeta no tiene doce dígitos.");
+              return false;
+            }
+          }
+
+      </script>
+
+      <script type="text/javascript">
+
+          function validateForm() {
+            var x = document.forms["fregistro"]["usuario"].value;
+            var password1 = document.forms["fregistro"]["pwd1"].value;
+            var password2 = document.forms["fregistro"]["pwd2"].value;
+            var email = document.forms["fregistro"]["email"].value;
+            var card = document.forms["fregistro"]["tarjeta"].value;
+            if (x == "" || password1 == "" || password2 == "" || email == "" || card == ""){
+              alert("No has rellenado todos los campos.");
+              return false;
+            }
+
+            return true;
+          }
+
+      </script>
+
+      <script>
+            $(document).ready(function() {
+              var longitud = false,
+                minuscula = false,
+                numero = false,
+                mayuscula = false;
+              $('input[type=password]').keyup(function() {
+                var pswd = $(this).val();
+                if (pswd.length < 8) {
+                  $('#length').removeClass('valid').addClass('invalid');
+                  longitud = false;
+                } else {
+                  $('#length').removeClass('invalid').addClass('valid');
+                  longitud = true;
+                }
+
+                //validate letter
+                if (pswd.match(/[A-z]/)) {
+                  $('#letter').removeClass('invalid').addClass('valid');
+                  minuscula = true;
+                } else {
+                  $('#letter').removeClass('valid').addClass('invalid');
+                  minuscula = false;
+                }
+
+                //validate capital letter
+                if (pswd.match(/[A-Z]/)) {
+                  $('#capital').removeClass('invalid').addClass('valid');
+                  mayuscula = true;
+                } else {
+                  $('#capital').removeClass('valid').addClass('invalid');
+                  mayuscula = false;
+                }
+
+                //validate number
+                if (pswd.match(/\d/)) {
+                  $('#number').removeClass('invalid').addClass('valid');
+                  numero = true;
+                } else {
+                  $('#number').removeClass('valid').addClass('invalid');
+                  numero = false;
+                }
+              }).focus(function() {
+                $('#pswd_info').show();
+              }).blur(function() {
+                $('#pswd_info').hide();
+              });
+
+              $("#registro").submit(function(event) {
+                alert("hola");
+                if(longitud && minuscula && numero && mayuscula){
+                  alert("password correcto");
+                  $("#registro").submit();
+
+                }else{
+                  alert("Password invalido.");
+                  event.preventDefault();
+                }
+
+              });
+            });
+      </script>
+
+{% endblock %}

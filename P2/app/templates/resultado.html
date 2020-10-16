@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>{{ title }}</title>
+{% endblock%}
+
+{%block login%}
+  {% if session_usuario %}
+    <p> Hola {{session_usuario}}</p>
+    <a class="button1" href="{{ url_for('logout') }}">Logout</a>
+  {%else%}
+
+  <a class="button1" href="{{ url_for('login') }}">Login</a>
+  <a class="button1" href="{{ url_for('registro') }}">Registrarse</a>
+
+  {% endif %}
+{%endblock%}
+
+{% block content %}
+
+  <h3>Resultados para {{ busqueda }}:</h3>
+  <div class ="resultados">
+    <div class="resultado1">
+      {% for resultado in resultados %}
+      <a href="{{ url_for('articulodetalle', peli_id=resultado.id) }}"><img src={{ url_for('static', filename=resultado.poster ) }} alt="poster" class="adastra"></a>
+      {% endfor %}
+    </div>
+  </div>
+
+
+{% endblock %}

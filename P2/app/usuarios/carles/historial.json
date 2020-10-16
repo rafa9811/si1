@@ -1,0 +1,230 @@
+{
+    "peliculas": [
+        {
+            "director": "Alejandro Amenabar",
+            "titulo": "Mientras dure la guerra",
+            "novedad": "S\u00ed",
+            "categoria": "Drama",
+            "actores": [
+                "Karra Elejalde",
+                "Eduard Fern\u00e1ndez",
+                "Santi Prego",
+                "Patricia L\u00f3pez",
+                "Inma Cuevas",
+                "Nathalie Poza",
+                "Luis Bermejo",
+                "Mireia Rey",
+                "Tito Valverde",
+                "Luis Callejo",
+                "Luis Zahera"
+            ],
+            "precio": "10.55",
+            "sinopsis": "Espa\u00f1a. Verano de 1936. El c\u00e9lebre escritor Miguel de Unamuno decide apoyar p\u00fablicamente la sublevaci\u00f3n militar que promete traer orden a la convulsa situaci\u00f3n del pa\u00eds. Inmediatamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca. Mientras, el general Franco consigue sumar sus tropas al frente sublevado e inicia una exitosa campa\u00f1a con la secreta esperanza de hacerse con el mando \u00fanico de la guerra. La deriva sangrienta del conflicto y el encarcelamiento de algunos de sus compa\u00f1eros provoca que Unamuno empiece a cuestionar su postura inicial y a sopesar sus principios. Cuando Franco traslada su cuartel a Salamanca y es nombrado Jefe del Estado en la zona nacional, Unamuno acude a su Palacio, decidido a hacerle una petici\u00f3n.",
+            "poster": "Mientrasdurelaguerra.jpg",
+            "id": 2,
+            "estreno": "2019"
+        },
+        {
+            "director": "Todd Phillips",
+            "titulo": "Joker",
+            "novedad": "S\u00ed",
+            "categoria": "Thriller",
+            "actores": [
+                "Joaquin Phoenix",
+                "Robert De Niro",
+                "Frances Conroy",
+                "Zazie Beetz",
+                "Brett Cullen",
+                "Shea Whigham",
+                "Bryan Callen",
+                "Jolie Chan"
+            ],
+            "precio": "1.99",
+            "sinopsis": "Arthur Fleck (Phoenix) es un hombre ignorado por la sociedad, cuya motivaci\u00f3n en la vida es hacer re\u00edr. Pero una serie de tr\u00e1gicos acontecimientos le llevar\u00e1n a ver el mundo de otra forma. Pel\u00edcula basada en el popular personaje de DC Comics Joker, conocido como archivillano de Batman, pero que en este film tomar\u00e1 un cariz m\u00e1s realista y oscuro.",
+            "poster": "joker.jpg",
+            "id": 8,
+            "estreno": "2019"
+        },
+        {
+            "director": "James Gray",
+            "titulo": "Ad Astra",
+            "novedad": "S\u00ed",
+            "categoria": "Ciencia ficcion",
+            "actores": [
+                "Brad Pitt",
+                "Tommy Lee Jones",
+                "Donald Sutherland",
+                "Ruth Negga",
+                "Liv Tyler",
+                "John Finn",
+                "Kayla Adams",
+                "Kimmy Shields",
+                "Bayardo De Murguia",
+                "Bobby Nish",
+                "Sasha Comp\u00e8re"
+            ],
+            "precio": "25.99",
+            "sinopsis": "El astronauta Roy McBride (Brad Pitt) viaja a los l\u00edmites exteriores del sistema solar para encontrar a su padre perdido y desentra\u00f1ar un misterio que amenaza la supervivencia de nuestro planeta. Su viaje desvelar\u00e1 secretos que desaf\u00edan la naturaleza de la existencia humana y nuestro lugar en el cosmos.",
+            "poster": "adastra.jpg",
+            "id": 1,
+            "estreno": "20 de septiembre de 2019"
+        },
+        {
+            "director": "Andy Muschietti",
+            "titulo": "It. Capitulo 2",
+            "novedad": "S\u00ed",
+            "categoria": "Terror",
+            "sinopsis": "Han pasado casi 30 a\u00f1os desde que el 'Club de los Perdedores', formado por Bill, Berverly, Richie, Ben, Eddie, Mike y Stanley, se enfrentaran al macabro y despiadado Pennywise (Bill Skarsg\u00e5rd). En cuanto tuvieron oportunidad, abandonaron el pueblo de Derry, en el estado de Maine, que tantos problemas les hab\u00eda ocasionado. Sin embargo, ahora, siendo adultos, parece que no pueden escapar de su pasado. Todos deber\u00e1n enfrentarse de nuevo al temible payaso para descubrir si de verdad est\u00e1n preparados para superar sus traumas de la infancia.",
+            "poster": "it2.jpg",
+            "actores": [
+                "Jessica Chastain",
+                "James McAvoy",
+                "Isaiah Mustafa",
+                "James Ransone",
+                "Bill Skarsg\u00e5rd",
+                "Jay Ryan",
+                "Bill Hader"
+            ],
+            "precio": "21.65",
+            "id": 3,
+            "estreno": "2019"
+        },
+        {
+            "director": "Alejandro Amenabar",
+            "titulo": "Mientras dure la guerra",
+            "novedad": "S\u00ed",
+            "categoria": "Drama",
+            "actores": [
+                "Karra Elejalde",
+                "Eduard Fern\u00e1ndez",
+                "Santi Prego",
+                "Patricia L\u00f3pez",
+                "Inma Cuevas",
+                "Nathalie Poza",
+                "Luis Bermejo",
+                "Mireia Rey",
+                "Tito Valverde",
+                "Luis Callejo",
+                "Luis Zahera"
+            ],
+            "precio": "10.55",
+            "sinopsis": "Espa\u00f1a. Verano de 1936. El c\u00e9lebre escritor Miguel de Unamuno decide apoyar p\u00fablicamente la sublevaci\u00f3n militar que promete traer orden a la convulsa situaci\u00f3n del pa\u00eds. Inmediatamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca. Mientras, el general Franco consigue sumar sus tropas al frente sublevado e inicia una exitosa campa\u00f1a con la secreta esperanza de hacerse con el mando \u00fanico de la guerra. La deriva sangrienta del conflicto y el encarcelamiento de algunos de sus compa\u00f1eros provoca que Unamuno empiece a cuestionar su postura inicial y a sopesar sus principios. Cuando Franco traslada su cuartel a Salamanca y es nombrado Jefe del Estado en la zona nacional, Unamuno acude a su Palacio, decidido a hacerle una petici\u00f3n.",
+            "poster": "Mientrasdurelaguerra.jpg",
+            "id": 2,
+            "estreno": "2019"
+        },
+        {
+            "director": "Alejandro Amenabar",
+            "titulo": "Mientras dure la guerra",
+            "novedad": "S\u00ed",
+            "categoria": "Drama",
+            "actores": [
+                "Karra Elejalde",
+                "Eduard Fern\u00e1ndez",
+                "Santi Prego",
+                "Patricia L\u00f3pez",
+                "Inma Cuevas",
+                "Nathalie Poza",
+                "Luis Bermejo",
+                "Mireia Rey",
+                "Tito Valverde",
+                "Luis Callejo",
+                "Luis Zahera"
+            ],
+            "precio": "10.55",
+            "sinopsis": "Espa\u00f1a. Verano de 1936. El c\u00e9lebre escritor Miguel de Unamuno decide apoyar p\u00fablicamente la sublevaci\u00f3n militar que promete traer orden a la convulsa situaci\u00f3n del pa\u00eds. Inmediatamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca. Mientras, el general Franco consigue sumar sus tropas al frente sublevado e inicia una exitosa campa\u00f1a con la secreta esperanza de hacerse con el mando \u00fanico de la guerra. La deriva sangrienta del conflicto y el encarcelamiento de algunos de sus compa\u00f1eros provoca que Unamuno empiece a cuestionar su postura inicial y a sopesar sus principios. Cuando Franco traslada su cuartel a Salamanca y es nombrado Jefe del Estado en la zona nacional, Unamuno acude a su Palacio, decidido a hacerle una petici\u00f3n.",
+            "poster": "Mientrasdurelaguerra.jpg",
+            "id": 2,
+            "estreno": "2019"
+        },
+        {
+            "director": "Alejandro Amenabar",
+            "titulo": "Mientras dure la guerra",
+            "novedad": "S\u00ed",
+            "categoria": "Drama",
+            "actores": [
+                "Karra Elejalde",
+                "Eduard Fern\u00e1ndez",
+                "Santi Prego",
+                "Patricia L\u00f3pez",
+                "Inma Cuevas",
+                "Nathalie Poza",
+                "Luis Bermejo",
+                "Mireia Rey",
+                "Tito Valverde",
+                "Luis Callejo",
+                "Luis Zahera"
+            ],
+            "precio": "10.55",
+            "sinopsis": "Espa\u00f1a. Verano de 1936. El c\u00e9lebre escritor Miguel de Unamuno decide apoyar p\u00fablicamente la sublevaci\u00f3n militar que promete traer orden a la convulsa situaci\u00f3n del pa\u00eds. Inmediatamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca. Mientras, el general Franco consigue sumar sus tropas al frente sublevado e inicia una exitosa campa\u00f1a con la secreta esperanza de hacerse con el mando \u00fanico de la guerra. La deriva sangrienta del conflicto y el encarcelamiento de algunos de sus compa\u00f1eros provoca que Unamuno empiece a cuestionar su postura inicial y a sopesar sus principios. Cuando Franco traslada su cuartel a Salamanca y es nombrado Jefe del Estado en la zona nacional, Unamuno acude a su Palacio, decidido a hacerle una petici\u00f3n.",
+            "poster": "Mientrasdurelaguerra.jpg",
+            "id": 2,
+            "estreno": "2019"
+        },
+        {
+            "director": "Alejandro Amenabar",
+            "titulo": "Mientras dure la guerra",
+            "novedad": "S\u00ed",
+            "categoria": "Drama",
+            "actores": [
+                "Karra Elejalde",
+                "Eduard Fern\u00e1ndez",
+                "Santi Prego",
+                "Patricia L\u00f3pez",
+                "Inma Cuevas",
+                "Nathalie Poza",
+                "Luis Bermejo",
+                "Mireia Rey",
+                "Tito Valverde",
+                "Luis Callejo",
+                "Luis Zahera"
+            ],
+            "precio": "10.55",
+            "sinopsis": "Espa\u00f1a. Verano de 1936. El c\u00e9lebre escritor Miguel de Unamuno decide apoyar p\u00fablicamente la sublevaci\u00f3n militar que promete traer orden a la convulsa situaci\u00f3n del pa\u00eds. Inmediatamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca. Mientras, el general Franco consigue sumar sus tropas al frente sublevado e inicia una exitosa campa\u00f1a con la secreta esperanza de hacerse con el mando \u00fanico de la guerra. La deriva sangrienta del conflicto y el encarcelamiento de algunos de sus compa\u00f1eros provoca que Unamuno empiece a cuestionar su postura inicial y a sopesar sus principios. Cuando Franco traslada su cuartel a Salamanca y es nombrado Jefe del Estado en la zona nacional, Unamuno acude a su Palacio, decidido a hacerle una petici\u00f3n.",
+            "poster": "Mientrasdurelaguerra.jpg",
+            "id": 2,
+            "estreno": "2019"
+        },
+        {
+            "director": "Andy Muschietti",
+            "titulo": "It. Capitulo 2",
+            "novedad": "S\u00ed",
+            "categoria": "Terror",
+            "sinopsis": "Han pasado casi 30 a\u00f1os desde que el 'Club de los Perdedores', formado por Bill, Berverly, Richie, Ben, Eddie, Mike y Stanley, se enfrentaran al macabro y despiadado Pennywise (Bill Skarsg\u00e5rd). En cuanto tuvieron oportunidad, abandonaron el pueblo de Derry, en el estado de Maine, que tantos problemas les hab\u00eda ocasionado. Sin embargo, ahora, siendo adultos, parece que no pueden escapar de su pasado. Todos deber\u00e1n enfrentarse de nuevo al temible payaso para descubrir si de verdad est\u00e1n preparados para superar sus traumas de la infancia.",
+            "poster": "it2.jpg",
+            "actores": [
+                "Jessica Chastain",
+                "James McAvoy",
+                "Isaiah Mustafa",
+                "James Ransone",
+                "Bill Skarsg\u00e5rd",
+                "Jay Ryan",
+                "Bill Hader"
+            ],
+            "precio": "21.65",
+            "id": 3,
+            "estreno": "2019"
+        },
+        {
+            "titulo": "Joker",
+            "novedad": "S\u00ed",
+            "categoria": "Thriller",
+            "actores": [
+                "Joaquin Phoenix",
+                "Robert De Niro",
+                "Frances Conroy",
+                "Zazie Beetz",
+                "Brett Cullen",
+                "Shea Whigham",
+                "Bryan Callen",
+                "Jolie Chan"
+            ],
+            "precio": "1.99",
+            "sinopsis": "Arthur Fleck (Phoenix) es un hombre ignorado por la sociedad, cuya motivaci\u00f3n en la vida es hacer re\u00edr. Pero una serie de tr\u00e1gicos acontecimientos le llevar\u00e1n a ver el mundo de otra forma. Pel\u00edcula basada en el popular personaje de DC Comics Joker, conocido como archivillano de Batman, pero que en este film tomar\u00e1 un cariz m\u00e1s realista y oscuro.",
+            "poster": "joker.jpg",
+            "estreno": "2019",
+            "director": "Todd Phillips",
+            "id": 8
+        }
+    ]
+}

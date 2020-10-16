@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>{{ title }}</title>
+{% endblock%}
+
+{%block login%}
+  {% if session_usuario %}
+    <p> Hola {{session_usuario}}</p>
+    <a class="button1" href="{{ url_for('logout') }}">Logout</a>
+  {% else %}
+     <a class="button1" href="{{ url_for('login') }}">Login</a>
+     <a class="button1" href="{{ url_for('registro') }}">Registrarse</a>
+  {% endif %}
+
+{%endblock%}
+
+{% block content %}
+    <h3>Últimas películas</h3>
+		<div class ="ultimaspeliculas">
+      {% for item in novedades %}
+        <a href="{{ url_for('articulodetalle', peli_id=item.id) }}"> <img src={{ url_for('static', filename=item.poster ) }} alt="poster" class="adastra"></a>
+      {%endfor%}
+
+		</div>
+		<form action="{{ url_for('resultado') }}", method = "POST">
+			<fieldset>
+			  <legend>Buscar película</legend><br>
+				Nombre:<br><input type="text" name="titulo"><br>
+				<select name="categoria">
+          {% for cat in categorias %}
+          <option value={{cat}}>{{cat}}</option>
+          {%endfor%}
+				</select>
+				<input type="submit" value="Confirmar">
+			</fieldset>
+		</form>
+
+{% endblock %}
